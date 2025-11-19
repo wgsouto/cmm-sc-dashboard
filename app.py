@@ -42,7 +42,7 @@ with col1:
 with col2:
     st.metric("PRMs Identificados", df['prms_count'].sum() if 'prms_count' in df.columns else 342, delta="-18%")
 with col3:
-    st.metric("PRMs Resolvidos", int(df['prms_count'].sum() * 0.76) if 'prms_count' in df.columns else 260, delta="76%)
+    st.metric("PRMs Resolvidos", int(df['prms_count'].sum() * 0.76) if 'prms_count' in df.columns else 260, delta="76%")
 with col4:
     economia = len(df) * 1800  # R$ 1.800/paciente/ano economizado (literatura)
     st.metric("Economia Estimada (SUS)", f"R$ {economia:,.0f}", delta="R$ 87.400/ano")
@@ -107,4 +107,5 @@ st.dataframe(
 )
 
 st.markdown("---")
+
 st.caption("CMM-SC v4.0 – Dashboard • Desenvolvido por Wagner • Santa Catarina 2025")
