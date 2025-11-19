@@ -1,5 +1,4 @@
 streamlit
 pandas
 plotly
-sqlite3  # já vem no Python
 openpyxl
